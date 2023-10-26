@@ -1,4 +1,5 @@
-FROM nginx:latest
+FROM nginx
 COPY ./default.conf /etc/nginx/conf.d/default.conf
-COPY ./index.html /var/www/index.html
-COPY ./detail.html /var/www/detaul.html
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./index.html /var/www/html/index.html
+COPY ./detail.html /var/www/html/detail/detail.html
